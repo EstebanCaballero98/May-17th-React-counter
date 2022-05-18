@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*align horizontally*/
+  justify-content: center; /*align vertically*/
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: bisque;
+}
+
+.container {
+  border: 1px black solid;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.7);
+  background-color: rgb(202, 85, 85);
+}
+
+/*alerts*/
+
+.alert1 {
+  display: none;
+}
+.alert1.active {
+  display: block;
+  font-size: 22px;
+}
+.alert2 {
+  display: none;
+}
+.alert2.active {
+  display: block;
+  font-size: 22px;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.container .number {
+  font-size: 130px;
+  margin: 10px;
+  color: black;
+}
+
+.container button {
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  background-color: blanchedalmond;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+.container button:active {
+  transform: scale(1.1);
 }
